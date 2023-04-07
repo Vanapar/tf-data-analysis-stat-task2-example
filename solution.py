@@ -10,4 +10,4 @@ def solution(p: float, x: np.array) -> tuple:
     a1 = pow((1 - p) / 2, 1 / x.size())
     a2 = pow((1 + p) / 2, 1 / x.size())
     max = x.max()
-    return (max - 0.074) / a1 + 0.092, (max - 0.074) / a2 + 0.074
+    return (max - 0.074) / a2 + 0.074, (max - 0.074) / a1 + 0.074
